@@ -251,10 +251,19 @@
         	leftArrowDown=true;
         break;
 
+		case "ArrowLeft": 
+        	console.log("ArrowLeft");
+        	leftArrowDown=true;
+        break;
         
         case "Right": // right
         console.log("right");
         rightArrowDown=true;
+        break;
+        
+        case "ArrowRight": // right
+        	console.log("ArrowRight");
+        	rightArrowDown=true;
         break;
         
         case " ":
@@ -266,24 +275,27 @@
     e.preventDefault(); // prevent the default action (scroll / move caret)
 });
 $(document).keyup(function(e) {
-			console.log(e.key);
+			console.log("name: "+e.key);
     switch(e.key) {
     	
         case "Left": 
         	console.log("left");
         	leftArrowDown=false;
         break;
+        
 		case "ArrowLeft": 
-        	console.log("left");
+        	console.log("ArrowLeft");
         	leftArrowDown=false;
+        break;
         
         case "Right": // right
-        console.log("right");
-        rightArrowDown=false;
+        	console.log("right");
+        	rightArrowDown=false;
+        break;
         
         case "ArrowRight": // right
-        console.log("right");
-        rightArrowDown=false;
+        	console.log("ArrowRight");
+        	rightArrowDown=false;
         break;
         
         
