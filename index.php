@@ -273,14 +273,20 @@ $(document).keyup(function(e) {
         	console.log("left");
         	leftArrowDown=false;
         break;
-
+		case "ArrowLeft": 
+        	console.log("left");
+        	leftArrowDown=false;
         
         case "Right": // right
         console.log("right");
         rightArrowDown=false;
+        
+        case "ArrowRight": // right
+        console.log("right");
+        rightArrowDown=false;
         break;
         
-        default: return; // exit this handler for other keys
+        
     }
     e.preventDefault(); // prevent the default action (scroll / move caret)
 });
